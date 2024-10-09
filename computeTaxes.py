@@ -46,6 +46,3 @@ print("Marital Status:",shownMStatus)
 print("Taxable Income: $",format(tI, "<0.2f"), sep="")
 print("Taxes Owed: $",format(taxesOwed, "<0.2f"), sep="") 
 print()
-    
-
-
