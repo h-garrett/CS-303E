@@ -29,6 +29,20 @@ def gamePrint():
     print("Enter 3 for scissors;")
     print("Enter 4 to exit:", end=" ")
 
+def endSession():
+    print()
+    print("--- End of Session ---")
+    print("Games Completed: ", games)
+    print()
+    print("Wins:", wins)
+    print("Win Rate:", format(winRate, "0.1%"))
+    print()
+    print("Losses: ", losses)
+    print("Loss Rate: ", format(lossRate, "0.1%"))
+    print()
+    print("Draws: ", draws)
+    print("Draw Rate: ", format(drawRate, "0.1%"))
+
 
 print()
 print("Welcome to a game of Rock, Paper, Scissors!")
@@ -42,6 +56,9 @@ games = 0
 win = "Congratulations, you won!"
 loss = "Sorry, you lost!"
 draw = "There's no winner. Try again!"
+winRate = wins/games
+lossRate = losses/games
+drawRate = draws/games
 
 import random
 
@@ -108,20 +125,8 @@ winRate = wins/games
 lossRate = losses/games
 drawRate = draws/games
 
-def endSession():
-    print()
-    print("--- End of Session ---")
-    print("Games Completed: ", games)
-    print()
-    print("Wins:", wins)
-    print("Win Rate:", format(winRate, "0.1%"))
-    print()
-    print("Losses: ", losses)
-    print("Loss Rate: ", format(lossRate, "0.1%"))
-    print()
-    print("Draws: ", draws)
-    print("Draw Rate: ", format(drawRate, "0.1%"))
 
-    endSession()
+
+endSession()
 
     
