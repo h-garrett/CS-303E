@@ -16,6 +16,7 @@ while True:
     if playerItem not in {"rock", "paper", "scissors", "exit"}:
         print("Invalid input.")
         print("Please enter 'rock', 'paper', or 'scissors'.")
+        print()
         continue
     if playerItem == "exit":
         break
